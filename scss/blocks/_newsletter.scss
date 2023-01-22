@@ -1,0 +1,110 @@
+.newsletter-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-leght img {
+  width: 660px;
+  height: 580px;
+  object-fit: cover;
+}
+
+.newsletter-right {
+  width: 675px;
+  background: #e0f6f1;
+  padding: 83px 150px;
+  text-align: start;
+}
+
+.newsletter-right h3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.05em;
+  color: #07484a;
+}
+
+.newsletter-right span {
+  font-weight: 600;
+}
+
+.newsletter-right p {
+  margin: 20px 0 57px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #07484a;
+}
+
+.newsletter-right a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #c4c4c4;
+  text-decoration: none;
+}
+
+.newsletter-btn {
+  margin-top: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+  width: 250px;
+  height: 68px;
+  background: #70908b;
+  border-radius: 6px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fdfbf8;
+}
+
+@include breackpoint-down(768px) {
+  .newsletter-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .newsletter-leght img {
+    width: 100%;
+  }
+
+  .newsletter-right {
+    width: 100%;
+  }
+
+  .newsletter-right h3 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  .newsletter-right p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 17px;
+  }
+
+  .newsletter-right a {
+    text-align: center;
+    font-size: 18px;
+    line-height: 17px;
+  }
+}
+
+@include breackpoint-down(500px) {
+  .newsletter-btn {
+    padding: 17px 20px;
+    margin: 20px 50px 0 -40px;
+  }
+}
