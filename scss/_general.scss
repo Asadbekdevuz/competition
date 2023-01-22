@@ -14,8 +14,9 @@ body {
   text-align: center;
   color: $color-green;
   background-image: url(../images/bg-body-img.png);
-  background-size: 100% 600px;
+  background-size: 100% 800px;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 h1,
 h2,
@@ -40,6 +41,9 @@ img {
 }
 
 @include breackpoint-down(1024px) {
+  body {
+    background-image: url("../images/body-bg-two.png");
+  }
   .section-title {
     margin-bottom: 36px;
     font-size: 48px;
@@ -47,10 +51,19 @@ img {
   }
 }
 
-@include breackpoint-down(460px) {
+@include breackpoint-down(550px) {
+  body {
+    background-size: 100% 700px;
+  }
   .section-title {
     margin-bottom: 23px;
     font-size: 28px;
     line-height: 42px;
+  }
+}
+
+@include breackpoint-down(460px) {
+  body {
+    background-size: 100% 500px;
   }
 }
