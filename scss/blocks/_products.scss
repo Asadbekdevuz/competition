@@ -129,3 +129,102 @@
 	background-color: transparent;
 	cursor: pointer;
 }
+
+.products-button {
+	padding: 24px 20px;
+	text-align: center;
+	background: #70908b;
+	border-radius: 10px;
+	border: none;
+	margin-top: 114px;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.products-button:hover {
+	opacity: 75%;
+}
+
+@include breackpoint-down(1024px) {
+	.products-list {
+		padding: 0px 0px 0px 20px;
+		gap: 32px;
+		padding-bottom: 100px;
+	}
+
+	.products {
+		background-image: url(../../images/product_laptop.png);
+		background-repeat: no-repeat;
+		height: 909px;
+	}
+
+	.products-item {
+		width: 416px;
+	}
+
+	.products-btn {
+		display: none;
+	}
+}
+
+@include breackpoint-down(668px) {
+	.products {
+		background-image: url(../../images/products_mobile.png);
+		background-repeat: no-repeat;
+		background-position: 0px 100px;
+		// width: 365px;
+		height: 634px;
+	}
+
+	.products-title {
+		margin-bottom: 5px;
+		font-size: 40px;
+	}
+
+	.products-item {
+		width: 237px;
+		height: 340px;
+	}
+
+	.products-item img {
+		width: 89px;
+		height: 100px;
+	}
+
+	.products-item h4 {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 23px;
+	}
+
+	.products-item p {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 23px;
+	}
+
+	.products-item span {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 23px;
+	}
+
+	.products-button {
+		padding: 18px 15px;
+	}
+}
+
+@include breackpoint-down(400px) {
+	.products-title {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 42px;
+		margin-bottom: 60px;
+	}
+}
