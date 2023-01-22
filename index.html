@@ -10,11 +10,130 @@
   </head>
   <body>
     <!-- Site Header Start  -->
-    <header class="site-header">
-      <div class="container">
-        <div class="header-inner header"></div>
+
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__inner">
+          <a class="header__logo logo" href="index.html">
+            <img
+              src="./images/logo.svg"
+              alt=""
+              class="logo__img"
+              width="144"
+              height="36"
+            />
+          </a>
+        </div>
+
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link link__border" href="#">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Products</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Categories</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">About</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__checked">
+          <input
+            class="visually-hidden humburger__check"
+            type="checkbox"
+            name="humurger"
+            id="humurger"
+          />
+
+          <div class="humburger__modal">
+            <ul class="humburger__list">
+              <li class="humburger__item">
+                <a class="humburger__link" href="./index.html">Home</a>
+              </li>
+
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Products</a>
+              </li>
+
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Categories</a>
+              </li>
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">About</a>
+              </li>
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <label class="header__humurger humburger" for="humurger">
+            <img
+              class="humburger__img"
+              src="./images/humburger.svg"
+              alt="humburger"
+              width="28"
+              height="17"
+            />
+
+            <img
+              class="humburger__img-x"
+              src="./images/humburger-x.svg"
+              alt="humburger-x"
+              width="26"
+              height="23"
+            />
+          </label>
+        </div>
+        <div class="header__right">
+          <ul class="header__right_list">
+            <li class="right__item">
+              <a class="right__link" href="#">
+                <img
+                  class="right__icon-img"
+                  src="./images/search-icon.svg"
+                  alt="search-icon"
+                  width="27"
+                  height="27"
+              /></a>
+            </li>
+            <li class="right__item">
+              <a class="right__link" href="#">
+                <img
+                  class="right__icon-img"
+                  src="./images/korzinka-icon.svg"
+                  alt="korzinka-icon"
+                  width="27"
+                  height="27"
+              /></a>
+            </li>
+            <li class="right__item">
+              <a class="right__link" href="#">
+                <img
+                  class="right__icon-img"
+                  src="./images/user-profil.svg"
+                  alt="user-icon"
+                  width="27"
+                  height="27"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <!-- Site Header End  -->
     <!-- Site Main Start  -->
     <main class="site-main">
@@ -31,8 +150,6 @@
           </div>
         </div>
       </section>
-
-
     </main>
     <!-- Site Main End  -->
     <!-- Site Footer Start  -->
