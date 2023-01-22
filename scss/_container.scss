@@ -1,17 +1,17 @@
-.container{
-    max-width: 1700px;
-    margin: 0 auto;
-    padding: 0 40px;
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 @include breackpoint-down(768px) {
-    .container{
-        padding: 0 20px;
-    }
+  .container {
+    padding: 0 20px;
+  }
 }
 
 @include breackpoint-down(768px) {
-    .container{
-        padding: 0 16px;
-    }
+  .container {
+    padding: 0 16px;
+  }
 }
