@@ -1,273 +1,677 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css" />
+    <title>Competition</title>
+  </head>
 
-  <title>Competition</title>
-</head>
+  <body>
+    <!-- Site Header Start  -->
 
-<body>
-  <!-- Site Header Start  -->
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__inner">
+          <a class="header__logo logo" href="index.html">
+            <img
+              src="./images/logo.svg"
+              alt=""
+              class="logo__img"
+              width="144"
+              height="36"
+            />
+          </a>
+        </div>
 
-  <header class="header">
-    <div class="header__container container">
-      <div class="header__inner">
-        <a class="header__logo logo" href="index.html">
-          <img src="./images/logo.svg" alt="" class="logo__img" width="144" height="36" />
-        </a>
-      </div>
-
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link link__border" href="#">Home</a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">Products</a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">Categories</a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">About</a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">Contact us</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="header__checked">
-        <input class="visually-hidden humburger__check" type="checkbox" name="humurger" id="humurger" />
-
-        <div class="humburger__modal">
-          <ul class="humburger__list">
-            <li class="humburger__item">
-              <a class="humburger__link" href="./index.html">Home</a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link link__border" href="#">Home</a>
             </li>
 
-            <li class="humburger__item">
-              <a class="humburger__link" href="#link">Products</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Products</a>
             </li>
 
-            <li class="humburger__item">
-              <a class="humburger__link" href="#link">Categories</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Categories</a>
             </li>
-            <li class="humburger__item">
-              <a class="humburger__link" href="#link">About</a>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">About</a>
             </li>
-            <li class="humburger__item">
-              <a class="humburger__link" href="#link">Contact us</a>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__checked">
+          <input
+            class="visually-hidden humburger__check"
+            type="checkbox"
+            name="humurger"
+            id="humurger"
+          />
+
+          <div class="humburger__modal">
+            <ul class="humburger__list">
+              <li class="humburger__item">
+                <a class="humburger__link" href="./index.html">Home</a>
+              </li>
+
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Products</a>
+              </li>
+
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Categories</a>
+              </li>
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">About</a>
+              </li>
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <label class="header__humurger humburger" for="humurger">
+            <img
+              class="humburger__img"
+              src="./images/humburger.svg"
+              alt="humburger"
+              width="28"
+              height="17"
+            />
+
+            <img
+              class="humburger__img-x"
+              src="./images/humburger-x.svg"
+              alt="humburger-x"
+              width="26"
+              height="23"
+            />
+          </label>
+        </div>
+        <div class="header__right">
+          <ul class="header__right_list">
+            <li class="right__item">
+              <a class="right__link" href="#">
+                <img
+                  class="right__icon-img"
+                  src="./images/search-icon.svg"
+                  alt="search-icon"
+                  width="27"
+                  height="27"
+              /></a>
+            </li>
+            <li class="right__item">
+              <a class="right__link" href="#">
+                <img
+                  class="right__icon-img"
+                  src="./images/korzinka-icon.svg"
+                  alt="korzinka-icon"
+                  width="27"
+                  height="27"
+              /></a>
+            </li>
+            <li class="right__item">
+              <a class="right__link" href="#">
+                <img
+                  class="right__icon-img"
+                  src="./images/user-profil.svg"
+                  alt="user-icon"
+                  width="27"
+                  height="27"
+              /></a>
             </li>
           </ul>
         </div>
-
-        <label class="header__humurger humburger" for="humurger">
-          <img class="humburger__img" src="./images/humburger.svg" alt="humburger" width="28" height="17" />
-
-          <img class="humburger__img-x" src="./images/humburger-x.svg" alt="humburger-x" width="26" height="23" />
-        </label>
       </div>
-      <div class="header__right">
-        <ul class="header__right_list">
-          <li class="right__item">
-            <a class="right__link" href="#">
-              <img class="right__icon-img" src="./images/search-icon.svg" alt="search-icon" width="27"
-                height="27" /></a>
-          </li>
-          <li class="right__item">
-            <a class="right__link" href="#">
-              <img class="right__icon-img" src="./images/korzinka-icon.svg" alt="korzinka-icon" width="27"
-                height="27" /></a>
-          </li>
-          <li class="right__item">
-            <a class="right__link" href="#">
-              <img class="right__icon-img" src="./images/user-profil.svg" alt="user-icon" width="27" height="27" /></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Site Header End  -->
-  <!-- Site Main Start  -->
-  <main class="site-main">
-    <section class="hero-section">
-      <div class="container">
-        <div class="hero"></div>
-      </div>
-    </section>
-
-    <section class="category">
-      <div class="container category-container">
-        <div class="category-inner">
-          <h3 class="section-title">Explore by Category</h3>
-
-          <div class="category-box">
-            <div class="category-left">
-              <label for="" class="category-label">
-                <img class="category-search" src="./images/category-search2.svg" alt="category search icon" />
-                <input type="text" class="category-input" placeholder="Search" aria-label="Category search" />
-              </label>
-
-              <ul class="category-list">
-                <li class="category-item">Bedroom</li>
-
-                <li class="category-item">Dinning room</li>
-
-                <li class="category-item">Meeting Room</li>
-
-                <li class="category-item">Workspace</li>
-
-                <li class="category-item">Living Room</li>
-
-                <li class="category-item">Kitchen</li>
-
-                <li class="category-item">Living Space</li>
-              </ul>
-
-              <button class="category-all">
-                <span class="category-all-span">All Categories </span>
-                <img src="./images/arrov-right2.svg" alt="Arrov right" />
-              </button>
-            </div>
-
-            <div class="category-right">
-              <ul class="category-carts">
-                <li class="category-cart">
-                  <button class="category-cart-btn">Explore</button>
-                  <img class="category-cart-img" src="./images/Image Container (11).png" alt="Bedroom" />
-                </li>
-
-                <li class="category-cart">
-                  <button class="category-cart-btn">Explore</button>
-                  <img class="category-cart-img" src="./images/Image Container12.png" alt="Dinning room" />
-                </li>
-
-                <li class="category-cart">
-                  <button class="category-cart-btn">Explore</button>
-                  <img class="category-cart-img" src="./images/Image Container (1).png" alt="Meeting Room" />
-                </li>
-
-                <li class="category-cart">
-                  <button class="category-cart-btn">Explore</button>
-                  <img class="category-cart-img" src="./images/Image Container (2).png" alt="Workspace" />
-                </li>
-
-                <li class="category-cart">
-                  <button class="category-cart-btn">Explore</button>
-                  <img class="category-cart-img" src="./images/Image Container (3).png" alt="Living Room" />
-                </li>
-
-                <li class="category-cart">
-                  <button class="category-cart-btn">Explore</button>
-                  <img class="category-cart-img" src="./images/Image Container (4).png" alt="Kitchen" />
-                </li>
-              </ul>
-            </div>
-          </div>
+    <!-- Site Header End  -->
+    <!-- Site Main Start  -->
+    <main class="site-main">
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero"></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="products">
-      <div class="container">
-        <div class="products-wrapper">
-          <h3 class="section-title">Popular Products</h3>
-          <ul class="products-list" id="slides-container">
-            <li class="products-item">
-              <img src="./images/products_1.png" alt="A picture of a chair" />
-              <h4>Armchair</h4>
-              <p>Light single chair</p>
-              <span>$145</span>
-            </li>
-            <li class="products-item">
-              <img src="./images/product_2.png" alt="A picture of a chair" />
-              <h4>Premium Sofa</h4>
-              <p>Light single chair</p>
-              <span>$145</span>
-            </li>
-            <li class="products-item">
-              <img src="./images/product_3.png" alt="A picture of a chair" />
-              <h4>Premium Sofa</h4>
-              <p>Light single chair</p>
-              <span>$145</span>
-            </li>
-            <li class="products-item">
-              <img style="width: 165px" src="./images/products_4.png" alt="A picture of a chair" />
-              <h4>Premium Sofa</h4>
-              <p>Light single chair</p>
-              <span>$145</span>
-            </li>
-            <li class="products-item">
-              <img style="width: 165px" src="./images/products_1.png" alt="A picture of a chair" />
-              <h4>Premium Sofa</h4>
-              <p>Light single chair</p>
-              <span>$145</span>
-            </li>
-            <li class="products-item">
-              <img style="width: 165px" src="./images/product_2.png" alt="A picture of a chair" />
-              <h4>Premium Sofa</h4>
-              <p>Light single chair</p>
-              <span>$145</span>
-            </li>
-          </ul>
-          <div class="products-btn">
-            <button class="up-arrow">
-              <img src="./images/uparrow.svg" alt="" />
-            </button>
-            <button class="down-arrow">
-              <img src="./images/downarrow.svg" alt="" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+      <section class="category">
+        <div class="container category-container">
+          <div class="category-inner">
+            <h3 class="section-title">Explore by Category</h3>
 
-    <section class="special">
-      <div class="container">
-        <div class="special-inner">
-          <h3 class="section-title">Special Package</h3>
+            <div class="category-box">
+              <div class="category-left">
+                <label for="" class="category-label">
+                  <img
+                    class="category-search"
+                    src="./images/category-search2.svg"
+                    alt="category search icon"
+                  />
+                  <input
+                    type="text"
+                    class="category-input"
+                    placeholder="Search"
+                    aria-label="Category search"
+                  />
+                </label>
 
-          <div class="special-box">
-            <div class="special-left">
-              <div class="special-left-cart">
-                <img class="special-left-img" src="./images/Image Container (5).png" alt="Room">
-              </div>
+                <ul class="category-list">
+                  <li class="category-item">Bedroom</li>
 
-              <div class="special-left-box">
-                <div class="special-left-body">
-                  <h4 class="special-text">Larkin Wood Full Set</h4>
-                  <img class="special-left-star" src="./images/Star.svg" alt="Stars">
-                  <span class="price">$729.99</span>
-                </div>
+                  <li class="category-item">Dinning room</li>
 
+                  <li class="category-item">Meeting Room</li>
 
-                <button class="special-btn">
-                  <span>Add to cart</span>
-                  <img src="./images/Icon.svg" alt="basket">
+                  <li class="category-item">Workspace</li>
+
+                  <li class="category-item">Living Room</li>
+
+                  <li class="category-item">Kitchen</li>
+
+                  <li class="category-item">Living Space</li>
+                </ul>
+
+                <button class="category-all">
+                  <span class="category-all-span">All Categories </span>
+                  <img src="./images/arrov-right2.svg" alt="Arrov right" />
                 </button>
               </div>
-            </div>
 
-            <div class="special-right">
-              <div class="desc-box">
-                <h5 class="desc-title">Description</h5>
+              <div class="category-right">
+                <ul class="category-carts">
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/Image Container (11).png"
+                      alt="Bedroom"
+                    />
+                  </li>
 
-                <p class="desc-text">
-                  Cast Aluminum Outdoor Chaise Lounge As an elegant and classic touch to your outdoor space, this cast
-                  Aluminum Chaise Lounge combines the appearance, function and quality all together, offering you with
-                  the best experience.
-                </p>
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/Image Container12.png"
+                      alt="Dinning room"
+                    />
+                  </li>
+
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/Image Container (1).png"
+                      alt="Meeting Room"
+                    />
+                  </li>
+
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/Image Container (2).png"
+                      alt="Workspace"
+                    />
+                  </li>
+
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/Image Container (3).png"
+                      alt="Living Room"
+                    />
+                  </li>
+
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/Image Container (4).png"
+                      alt="Kitchen"
+                    />
+                  </li>
+                </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <div class="products-wrapper">
+            <h3 class="section-title">Popular Products</h3>
+            <ul class="products-list" id="slides-container">
+              <li class="products-item">
+                <img src="./images/products_1.png" alt="A picture of a chair" />
+                <h4>Armchair</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img src="./images/product_2.png" alt="A picture of a chair" />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img src="./images/product_3.png" alt="A picture of a chair" />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img
+                  style="width: 165px"
+                  src="./images/products_4.png"
+                  alt="A picture of a chair"
+                />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img
+                  style="width: 165px"
+                  src="./images/products_1.png"
+                  alt="A picture of a chair"
+                />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img
+                  style="width: 165px"
+                  src="./images/product_2.png"
+                  alt="A picture of a chair"
+                />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+            </ul>
+            <div class="products-btn">
+              <button class="up-arrow">
+                <img src="./images/uparrow.svg" alt="" />
+              </button>
+              <button class="down-arrow">
+                <img src="./images/downarrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <<<<<<< HEAD
+      <section class="special">
+        <div class="container">
+          <div class="special-inner">
+            <h3 class="section-title">Special Package</h3>
+
+            <div class="special-box">
+              <div class="special-left">
+                <div class="special-left-cart">
+                  <img
+                    class="special-left-img"
+                    src="./images/Image Container (5).png"
+                    alt="Room"
+                  />
+                </div>
+
+                <div class="special-left-box">
+                  <div class="special-left-body">
+                    <h4 class="special-text">Larkin Wood Full Set</h4>
+                    <img
+                      class="special-left-star"
+                      src="./images/Star.svg"
+                      alt="Stars"
+                    />
+                    <span class="price">$729.99</span>
+                  </div>
+
+                  <button class="special-btn">
+                    <span>Add to cart</span>
+                    <img src="./images/Icon.svg" alt="basket" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="special-right">
+                <div class="desc-box">
+                  <h5 class="desc-title">Description</h5>
+
+                  <p class="desc-text">
+                    Cast Aluminum Outdoor Chaise Lounge As an elegant and
+                    classic touch to your outdoor space, this cast Aluminum
+                    Chaise Lounge combines the appearance, function and quality
+                    all together, offering you with the best experience.
+                  </p>
+                </div>
+
+                <div class="special-pacage">
+                  <button class="special-pacage-more">
+                    <span>See More</span>
+                    <img src="./images/Down-arrow.svg" alt="" />
+                  </button>
+
+                  <ul class="special-pacage-list">
+                    <li class="special-pacage-item special-card">
+                      <div class="special-card-left">
+                        <img
+                          src="./images/Image Container (6).png"
+                          alt=""
+                          class="special-card"
+                        />
+                      </div>
+
+                      <div class="special-card-right">
+                        <div class="special-left-box">
+                          <h4 class="special-text">Larkin Wood Full Set</h4>
+                          <span class="price">$729.99</span>
+                        </div>
+
+                        <img
+                          class="special-left-star"
+                          src="./images/Star2.svg"
+                          alt="Stars"
+                        />
+                        <span class="price">See Details</span>
+                      </div>
+                    </li>
+
+                    <li class="special-pacage-item special-card">
+                      <div class="special-card-left">
+                        <img
+                          src="./images/Image Container (6).png"
+                          alt=""
+                          class="special-card"
+                        />
+                      </div>
+
+                      <div class="special-card-right">
+                        <div class="special-left-box">
+                          <h4 class="special-text">Larkin Wood Full Set</h4>
+                          <span class="price">$729.99</span>
+                        </div>
+
+                        <img
+                          class="special-left-star"
+                          src="./images/Star2.svg"
+                          alt="Stars"
+                        />
+                        <span class="price">See Details</span>
+                      </div>
+                    </li>
+
+                    <li class="special-pacage-item special-card">
+                      <div class="special-card-left">
+                        <img
+                          src="./images/Image Container (6).png"
+                          alt=""
+                          class="special-card"
+                        />
+                      </div>
+
+                      <div class="special-card-right">
+                        <div class="special-left-box">
+                          <h4 class="special-text">Larkin Wood Full Set</h4>
+                          <span class="price">$729.99</span>
+                        </div>
+
+                        <img
+                          class="special-left-star"
+                          src="./images/Star2.svg"
+                          alt="Stars"
+                        />
+                        <span class="price">See Details</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Site Main End  -->
+    <!-- Site Footer Start  -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner footer"></div>
+      </div>
+    </footer>
+    <!-- Site Footer End  -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Competition</title>
+  </head>
+  <body>
+    <!-- Site Header Start  -->
+
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__inner">
+          <a class="header__logo logo" href="index.html">
+            <img
+              src="./images/logo.svg"
+              alt=""
+              class="logo__img"
+              width="144"
+              height="36"
+            />
+          </a>
+        </div>
+
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link link__border" href="#">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Products</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Categories</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">About</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__checked">
+          <input
+            class="visually-hidden humburger__check"
+            type="checkbox"
+            name="humurger"
+            id="humurger"
+          />
+
+          <div class="humburger__modal">
+            <ul class="humburger__list">
+              <li class="humburger__item">
+                <a class="humburger__link" href="./index.html">Home</a>
+              </li>
+
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Products</a>
+              </li>
+
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Categories</a>
+              </li>
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">About</a>
+              </li>
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <label class="header__humurger humburger" for="humurger">
+            <img
+              class="humburger__img"
+              src="./images/humburger.svg"
+              alt="humburger"
+              width="28"
+              height="17"
+            />
+
+            <img
+              class="humburger__img-x"
+              src="./images/humburger-x.svg"
+              alt="humburger-x"
+              width="26"
+              height="23"
+            />
+          </label>
+        </div>
+        <div class="header__right">
+          <ul class="header__right_list">
+            <li class="right__item">
+              <a class="right__link" href="#">
+                <img
+                  class="right__icon-img"
+                  src="./images/search-icon.svg"
+                  alt="search-icon"
+                  width="27"
+                  height="27"
+              /></a>
+            </li>
+            <li class="right__item">
+              <a class="right__link" href="#">
+                <img
+                  class="right__icon-img"
+                  src="./images/korzinka-icon.svg"
+                  alt="korzinka-icon"
+                  width="27"
+                  height="27"
+              /></a>
+            </li>
+            <li class="right__item">
+              <a class="right__link" href="#">
+                <img
+                  class="right__icon-img"
+                  src="./images/user-profil.svg"
+                  alt="user-icon"
+                  width="27"
+                  height="27"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="visually-hidden">Inwood</h1>
+          <div class="hero">
+            <h2 class="hero__title">Exclusive Deals of Furniture Collection</h2>
+            <p class="hero__text">
+              Explore different categories. Find the best deals.
+            </p>
+            <button class="hero__btn">Shop Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="category">
+        <div class="container category-container">
+          <div class="category-inner">
+            <h3 class="section-title">Explore by Category</h3>
+
+            <div class="category-box">
+              <div class="category-left">
+                <label for="" class="category-label">
+                  <img
+                    class="category-search"
+                    src="./images/category-search2.svg"
+                    alt="category search icon"
+                  />
+                  <input
+                    type="text"
+                    class="category-input"
+                    placeholder="Search"
+                    aria-label="Category search"
+                  />
+                </label>
+
+                <ul class="category-list">
+                  <li class="category-item">Bedroom</li>
+
+                  <li class="category-item">Dinning room</li>
+
+                  <li class="category-item">Meeting Room</li>
+
+                  <li class="category-item">Workspace</li>
+
+                  <li class="category-item">Living Room</li>
+
+                  <li class="category-item">Kitchen</li>
+
+                  <li class="category-item">Living Space</li>
+                </ul>
+
+                <button class="category-all">
+                  <span class="category-all-span">All Categories </span>
+                  <img src="./images/arrov-right2.svg" alt="Arrov right" />
+                </button>
+              </div>
+
+              <div class="category-right">
+                <ul class="category-carts">
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/body-bg-two.png"
+                      alt="Bedroom"
+                    />
+                  </li>
+
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/dinning-room.png"
+                      alt="Dinning room"
+                    />
+                  </li>
+
 
               <div class="special-pacage">
                 <button class="special-pacage-more">
@@ -334,28 +738,182 @@
                         <img src="./images/Down-arrow.svg" alt="">
                       </button>
                     </div>
+
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/meeting-room.png"
+                      alt="Meeting Room"
+                    />
+                  </li>
+
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/workspace.png"
+                      alt="Workspace"
+                    />
+                  </li>
+
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/living-room.png"
+                      alt="Living Room"
+                    />
+                  </li>
+
+                  <li class="category-cart">
+                    <button class="category-cart-btn">Explore</button>
+                    <img
+                      class="category-cart-img"
+                      src="./images/kitchen.png"
+                      alt="Kitchen"
+                    />
+
                   </li>
                 </ul>
               </div>
             </div>
-
-
           </div>
-
         </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <div class="products-wrapper">
+            <h3 class="products-title">Popular Products</h3>
+            <ul class="products-list" id="slides-container">
+              <li class="products-item">
+                <img src="./images/products_1.png" alt="A picture of a chair" />
+                <h4>Armchair</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img src="./images/product_2.png" alt="A picture of a chair" />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img src="./images/product_3.png" alt="A picture of a chair" />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img
+                  style="width: 165px"
+                  src="./images/products_4.png"
+                  alt="A picture of a chair"
+                />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img
+                  style="width: 165px"
+                  src="./images/products_1.png"
+                  alt="A picture of a chair"
+                />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+              <li class="products-item">
+                <img
+                  style="width: 165px"
+                  src="./images/product_2.png"
+                  alt="A picture of a chair"
+                />
+                <h4>Premium Sofa</h4>
+                <p>Light single chair</p>
+                <span>$145</span>
+              </li>
+            </ul>
+            <div class="products-btn">
+              <button class="up-arrow">
+                <img src="./images/uparrow.svg" alt="Up arrow" />
+              </button>
+              <button class="down-arrow">
+                <img src="./images/downarrow.svg" alt="Down arrow" />
+              </button>
+            </div>
+            <div class="products-btn">
+              <button class="up-arrow">
+                <img src="./images/uparrow.svg" alt="" />
+              </button>
+              <button class="down-arrow">
+                <img src="./images/downarrow.svg" alt="" />
+              </button>
+            </div>
+            <button class="products-button">Explore all items</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="creation">
+        <div class="creation-wrapper">
+          <div class="creation-inner">
+            <h3>
+              Our <br />
+              Own Creation
+            </h3>
+
+            <p>Designed in our studio</p>
+            <div class="creation-more">
+              <a href="#">More</a>
+              <div class="creation-lines">
+                <span class="more-white-line"></span>
+
+                <span class="more-white-black"></span>
+                <span class="more-black-line"></span>
+              </div>
+              <div class="creation-btn">
+                <button class="up-arrow">
+                  <img src="./images/uparrow.svg" alt="" />
+                </button>
+                <button class="down-arrow">
+                  <img src="./images/downarrow.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="creation-list" id="slides-container">
+            <li class="creation-item">
+              <img src="./images/creation_1.png" alt="A picture of a home" />
+            </li>
+            <li class="creation-item">
+              <img src="./images/creation_2.png" alt="A picture of a home" />
+            </li>
+            <li class="creation-item">
+              <img src="./images/creation_3.png" alt="A picture of a home" />
+            </li>
+            <li class="creation-item">
+              <img
+                style="width: 165px"
+                src="./images/creation_4.png"
+                alt="A picture of a home"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Site Main End  -->
+    <!-- Site Footer Start  -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner footer"></div>
       </div>
-    </section>
-  </main>
-  <!-- Site Main End  -->
-  <!-- Site Footer Start  -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner footer"></div>
-    </div>
-  </footer>
-  <!-- Site Footer End  -->
+    </footer>
+    <!-- Site Footer End  -->
 
-  <script src="./js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
