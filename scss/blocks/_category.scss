@@ -1,279 +1,274 @@
 .category {
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 46px;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 46px;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-  }
-  
+  width: 5px;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
-background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: #555; 
+  background: #555;
 }
 
 .category-box {
-    display: flex;
-    justify-content: space-between;
-    gap: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
 }
 
 .category-left {
-    width: 100%;
-    max-width: 349px;
-
+  width: 100%;
+  max-width: 349px;
 }
 
 .category-label {
-    display: flex;
-    gap: 18px;
-    margin-bottom: 80px;
-    padding: 26px 32px;
-    background-color: #F0F0F0;
-    border-radius: 10px;
+  display: flex;
+  gap: 18px;
+  margin-bottom: 80px;
+  padding: 26px 32px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
 }
 .category-input {
-    width: 100%;
-    border: 0;
-    outline: none;
-    background-color: transparent;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: transparent;
 }
 
 .category-list {
-    max-height: 694px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 100px;
-    margin-bottom: 80px;
-    padding: 0 20px;
-    overflow-y: scroll;
+  max-height: 694px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 100px;
+  margin-bottom: 80px;
+  padding: 0 20px;
+  overflow-y: scroll;
 }
 
 .category-item {
-    font-family: $font-roboto;
-    color: $color-green;
-    cursor: pointer;
+  font-family: $font-roboto;
+  color: $color-green;
+  cursor: pointer;
 }
 
 .category-all {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 20px;
-    gap: 18px;
-    font-family: $font-oppen;
-    background: #70908B;
-    border-radius: 10px;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 20px;
+  gap: 18px;
+  font-family: $font-oppen;
+  background: #70908b;
+  border-radius: 10px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
 }
 
 .category-right {
-    width: 100%;
-    max-width: 1211px;
-
+  width: 100%;
+  max-width: 1211px;
 }
 
 .category-carts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .category-cart {
-    height: 321px;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
+  height: 321px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-
 .category-cart-btn {
-    display: none;
-    position: absolute;
-    bottom:70px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 14px 20px;
-    background: #E0EFF6;
-    border-radius: 6px;
-    border: 0;
-    cursor: pointer;
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 20px;
+  background: #e0eff6;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
 }
 
 .category-cart:hover .category-cart-btn {
-    display: block;
+  display: block;
 }
 
 .category-cart:before {
-    position: absolute;
-    top: 73px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    font-family: $font-playfair;
-    font-size: 48px;
-    line-height: 50px;
-    text-align: center;
-    color: #FDFBF8;
+  position: absolute;
+  top: 73px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-family: $font-playfair;
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #fdfbf8;
 }
 
 .category-cart:hover:after {
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   z-index: 1;
-   background-color: rgba(0, 0, 0, 0.15);
-   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.15);
+  content: "";
 }
 
 .category-cart:nth-child(1):hover:before {
-    content: "Bedroom";
+  content: "Bedroom";
 }
 
 .category-cart:nth-child(2):hover:before {
-    content: "Dinning room";
+  content: "Dinning room";
 }
 
 .category-cart:nth-child(3):hover:before {
-    content: "Meeting Room";
+  content: "Meeting Room";
 }
 
 .category-cart:nth-child(4):hover:before {
-    content: "Workspace";
+  content: "Workspace";
 }
 
 .category-cart:nth-child(5):hover:before {
-    content: "Living Room";
+  content: "Living Room";
 }
 
 .category-cart:nth-child(6):hover:before {
-    content: "Kitchen";
+  content: "Kitchen";
 }
 
 .category-cart-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 
 @include breackpoint-down(1024px) {
-    .category-box {
-        display: block;
-    }
+  .category-box {
+    display: block;
+  }
 
-    .category-left {
-        width: 100%;
-        max-width: 791px;
-        margin: 0 auto;
-    
-    }
+  .category-left {
+    width: 100%;
+    max-width: 791px;
+    margin: 0 auto;
+  }
 
-    .category-label {
-        width: 100%;
-        max-width: 463px;
-        margin: 0 auto;
-        padding: 29px 20px;
-        margin-bottom: 36px;
-    }
+  .category-label {
+    width: 100%;
+    max-width: 463px;
+    margin: 0 auto;
+    padding: 29px 20px;
+    margin-bottom: 36px;
+  }
 
-    .category-list {
-        width: 100%;
-        max-width: 769px;
-        max-height: 100%;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 25px;
-        margin-bottom: 80px;
-        padding: 0 40px;
-        overflow-y: auto;
-    }
+  .category-list {
+    width: 100%;
+    max-width: 769px;
+    max-height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 80px;
+    padding: 0 40px;
+    overflow-y: auto;
+  }
 
-    .category-item {
-       margin-bottom: 15px;
-    }
+  .category-item {
+    margin-bottom: 15px;
+  }
 
-    .category-all {
-        width: 100%;
-        max-width: 265px;
-        margin: 0 auto;
-        margin-bottom: 99px;
-    }
+  .category-all {
+    width: 100%;
+    max-width: 265px;
+    margin: 0 auto;
+    margin-bottom: 99px;
+  }
 
-    .category-cart {
-        height: 277px;
-    }
+  .category-cart {
+    height: 277px;
+  }
 
-    .category-cart:before {
-        top: 51px;
-    }
+  .category-cart:before {
+    top: 51px;
+  }
 }
 
 @include breackpoint-down(450px) {
-    .category-cart {
-        height: 242px;
-    }
+  .category-cart {
+    height: 242px;
+  }
 
-    .category-cart:before {
-        top: 50px;
-    }
+  .category-cart:before {
+    top: 50px;
+  }
 }
 
 @include breackpoint-down(450px) {
-    .category-all {
-        display: none;
-    }
+  .category-all {
+    display: none;
+  }
 
-    .category-carts {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        gap: 32px;
-    }
+  .category-carts {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 32px;
+  }
 
-    .category-list {
-        width: 100%;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 4px;
-        margin-bottom: 68px;
-        padding: 0;
-    }
+  .category-list {
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 68px;
+    padding: 0;
+  }
 
-    .category-item {
-        font-family: $font-oppen;
-        margin-bottom: 6px;
-        padding: 5px 12px;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
-        color: #000000;
-        background-color: #F5F5F5;
-        border-radius: 84px;
-    }
+  .category-item {
+    font-family: $font-oppen;
+    margin-bottom: 6px;
+    padding: 5px 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    background-color: #f5f5f5;
+    border-radius: 84px;
+  }
 
-    .category-cart {
-        height: 233px;
-    }
+  .category-cart {
+    height: 233px;
+  }
 }
