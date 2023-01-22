@@ -308,6 +308,55 @@ template {
   display: none;
 }
 
+/* playfair-display-regular - latin */
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: "../fonts/playfair-display-v30-latin-regular.woff2" "../fonts/playfair-display-v30-latin-regular.woff";
+}
+/* playfair-display-700 - latin */
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  src: "../fonts/playfair-display-v30-latin-700.woff2" "../fonts/playfair-display-v30-latin-700.woff";
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: "../fonts/open-sans-v34-latin-regular.woff2" "../fonts/open-sans-v34-latin-regular.woff";
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: "../fonts/open-sans-v34-latin-700.woff2" "../fonts/open-sans-v34-latin-700.woff";
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: "../fonts/roboto-v30-latin-regular.woff2" "../fonts/roboto-v30-latin-regular.woff";
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: "../fonts/roboto-v30-latin-300.woff2" "../fonts/roboto-v30-latin-300.woff";
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: "../fonts/roboto-v30-latin-regular.woff2" "../fonts/roboto-v30-latin-regular.woff";
+}
 * {
   margin: 0;
   padding: 0;
@@ -369,4 +418,134 @@ img {
   .container {
     padding: 0 160px;
   }
+}
+.products {
+  width: 100%;
+  height: 1098px;
+  background-image: url(../../images/product_img.png);
+  background-repeat: no-repeat;
+}
+
+.products-title {
+  text-align: center;
+  margin: 58px 0;
+  padding-bottom: 50px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: #07484a;
+}
+
+.products-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 150px;
+  overflow-x: scroll;
+  padding-bottom: 54px;
+  gap: 32px;
+  z-index: 100;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  border: 2px solid #07484a;
+}
+
+::-webkit-scrollbar-track {
+  background: #07484a;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 12px solid #70908b;
+}
+
+.products-item {
+  width: 430.75px;
+  height: 585px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 60px 40px;
+  border-radius: 16px;
+}
+
+.products-item img {
+  width: 204px;
+  height: 270px;
+}
+
+.products-item h4 {
+  margin-top: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #70908b;
+}
+
+.products-item p {
+  margin-top: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #70908b;
+}
+
+.products-item span {
+  padding-top: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  color: #70908b;
+}
+
+.products-item:nth-child(1) {
+  background-color: #caf3e5;
+}
+
+.products-item:nth-child(2) {
+  background-color: #e0eff6;
+}
+
+.products-item:nth-child(3) {
+  background-color: #eeebff;
+}
+
+.products-item:nth-child(4) {
+  background-color: #fff4e7;
+}
+
+.products-item:nth-child(5) {
+  background-color: #ebbb80;
+}
+
+.products-item:nth-child(6) {
+  background-color: #a7f599;
+}
+
+.products-btn {
+  position: absolute;
+  right: 50px;
+}
+
+.up-arrow {
+  padding-top: 20px;
+  border: none;
+  background-color: transparent;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.down-arrow {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
