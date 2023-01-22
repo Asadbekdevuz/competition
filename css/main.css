@@ -1124,4 +1124,177 @@ img {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.products-button {
+  padding: 24px 20px;
+  text-align: center;
+  background: #70908b;
+  border-radius: 10px;
+  border: none;
+  margin-top: 114px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.products-button:hover {
+  opacity: 75%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .products-list {
+    padding: 0px 0px 0px 20px;
+    gap: 32px;
+    padding-bottom: 100px;
+  }
+  .products {
+    background-image: url(../../images/product_laptop.png);
+    background-repeat: no-repeat;
+    height: 909px;
+  }
+  .products-item {
+    width: 416px;
+  }
+  .products-btn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .products {
+    background-image: url(../../images/products_mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
+    height: 634px;
+  }
+  .products-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+  }
+  .products-item {
+    width: 237px;
+    height: 340px;
+  }
+  .products-item img {
+    width: 89px;
+    height: 100px;
+  }
+  .products-item h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .products-item p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .products-item span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .products-button {
+    padding: 18px 15px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .products-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 60px;
+  }
+}
+.creation-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 100px 0px 150px;
+  gap: 32px;
+  width: 577px;
+  height: 503px;
+  background: #70908b;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.creation-inner h3 {
+  text-align: start;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120.6%;
+  color: #fdfbf8;
+}
+
+.creation-inner p {
+  padding-top: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 95.6%;
+  color: #fdfbf8;
+}
+
+.creation-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 318px;
+}
+
+.creation-more a {
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 95.6%;
+  color: #fdfbf8;
+  text-decoration: none;
+}
+
+.creation-lines {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.more-white-line {
+  width: 27px;
+  height: 0px;
+  border: 4px solid #fdfbf8;
+}
+
+.more-white-black {
+  width: 87px;
+  height: 0px;
+  border: 2px solid #07484a;
+}
+
+.creation-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 26px;
+}
+
+.creation-item {
+  width: 332px;
+  height: 480px;
+  border-radius: 10px;
+}
+
+.creation-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
