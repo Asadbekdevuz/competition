@@ -499,6 +499,7 @@ img {
 .category-item {
   font-family: "Roboto";
   color: #07484A;
+  cursor: pointer;
 }
 
 .category-all {
@@ -512,6 +513,7 @@ img {
   border-radius: 10px;
   border: 0;
   color: #fff;
+  cursor: pointer;
 }
 
 .category-right {
