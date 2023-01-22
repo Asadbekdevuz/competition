@@ -1,48 +1,56 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-body{
-    font-family: $font-oppen;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: $color-green;
+body {
+  font-family: $font-oppen;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: $color-green;
+  background-image: url(../images/bg-body-img.png);
+  background-size: 100% 600px;
+  background-repeat: no-repeat;
 }
-h1,h2,h3,h4,h5,h6 {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-img{
-    object-fit: cover;
+img {
+  object-fit: cover;
 }
 
 .section-title {
-    margin:0 auto;
-    margin-bottom: 100px;
-    font-family: $font-playfair;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 85px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  font-family: $font-playfair;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
 }
 
 @include breackpoint-down(1024px) {
-    .section-title {
-        margin-bottom: 36px;
-        font-size: 48px;
-        line-height: 63.98px;
-    }
+  .section-title {
+    margin-bottom: 36px;
+    font-size: 48px;
+    line-height: 63.98px;
+  }
 }
 
 @include breackpoint-down(460px) {
-    .section-title {
-        margin-bottom: 23px;
-        font-size: 28px;
-        line-height: 42px;
-    }
+  .section-title {
+    margin-bottom: 23px;
+    font-size: 28px;
+    line-height: 42px;
+  }
 }

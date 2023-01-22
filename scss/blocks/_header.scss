@@ -1,0 +1,153 @@
+.header {
+  padding-top: 28px;
+  padding-bottom: 33px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item + .nav__item {
+  margin-left: 30px;
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+}
+.nav__link:hover {
+  border-bottom: 2px solid white;
+  opacity: 1;
+}
+.nav__link:active {
+  border-bottom: 2px solid white;
+  opacity: 1;
+}
+
+.header__right_list {
+  display: flex;
+  align-items: center;
+}
+
+.right__item + .right__item {
+  margin-left: 58px;
+}
+.right__icon-img {
+  width: 27px;
+  height: 27px;
+}
+
+.header__checked {
+  display: none;
+}
+
+.humburger {
+  display: none;
+}
+.humburger__line {
+  width: 80%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fbfcfe;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.humburger__img {
+  width: 31px;
+  height: 24px;
+}
+.humburger__modal {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  text-align: start;
+  margin: auto;
+  background-color: white;
+  display: none;
+  z-index: 1;
+  padding-left: 70px;
+}
+
+.humburger__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+.humburger__item {
+  margin-bottom: 25px;
+}
+
+.humburger__img-x {
+  display: none;
+  object-fit: contain;
+}
+
+.humburger__check:checked ~ .humburger__modal {
+  display: block;
+}
+
+.humburger__check:checked ~ .humburger__modal ~ .humburger > .humburger__img {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+.humburger__check:checked ~ .humburger__modal ~ .humburger > .humburger__img-x {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+@include breackpoint-down(1024px) {
+  .nav {
+    display: none;
+  }
+  .header__inner-link {
+    display: none;
+  }
+  .header__checked {
+    display: block;
+  }
+
+  .humburger-link {
+    display: inline-block;
+    padding: 15px 36px;
+  }
+  .humburger {
+    display: block;
+  }
+}
+@include breackpoint-down(768px) {
+  .humburger-link {
+    font-size: 30px;
+  }
+}
+
+@include breackpoint-down(460px) {
+  .header__container {
+    display: flex;
+    flex-wrap: row-reverse;
+  }
+  .right__item + .right__item {
+    margin-left: 12px;
+  }
+  .humburger-link {
+    font-size: 20px;
+    line-height: 11px;
+  }
+}
