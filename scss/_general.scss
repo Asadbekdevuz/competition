@@ -30,3 +30,19 @@ img{
     font-size: 64px;
     line-height: 85px;
 }
+
+@include breackpoint-down(1024px) {
+    .section-title {
+        margin-bottom: 36px;
+        font-size: 48px;
+        line-height: 63.98px;
+    }
+}
+
+@include breackpoint-down(460px) {
+    .section-title {
+        margin-bottom: 23px;
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
