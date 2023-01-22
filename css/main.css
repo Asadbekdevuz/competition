@@ -527,10 +527,75 @@ img {
 }
 
 .category-cart {
-  background: url(pexels-alexander-zvir-10767386.jpg);
-  filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.15));
+  height: 321px;
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.category-cart-btn {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 20px;
+  background: #E0EFF6;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}
+
+.category-cart:hover .category-cart-btn {
+  display: block;
+}
+
+.category-cart:before {
+  position: absolute;
+  top: 73px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-family: "Playfair Display";
+  font-size: 48px;
+  line-height: 50px;
+  text-align: center;
+  color: #FDFBF8;
+}
+
+.category-cart:hover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.15);
+  content: "";
+}
+
+.category-cart:nth-child(1):hover:before {
+  content: "Bedroom";
+}
+
+.category-cart:nth-child(2):hover:before {
+  content: "Dinning room";
+}
+
+.category-cart:nth-child(3):hover:before {
+  content: "Meeting Room";
+}
+
+.category-cart:nth-child(4):hover:before {
+  content: "Workspace";
+}
+
+.category-cart:nth-child(5):hover:before {
+  content: "Living Room";
+}
+
+.category-cart:nth-child(6):hover:before {
+  content: "Kitchen";
 }
 
 .category-cart-img {
@@ -578,6 +643,20 @@ img {
     margin: 0 auto;
     margin-bottom: 99px;
   }
+  .category-cart {
+    height: 277px;
+  }
+  .category-cart:before {
+    top: 51px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .category-cart {
+    height: 242px;
+  }
+  .category-cart:before {
+    top: 50px;
+  }
 }
 @media only screen and (max-width: 450px) {
   .category-all {
@@ -609,5 +688,8 @@ img {
     color: #000000;
     background-color: #F5F5F5;
     border-radius: 84px;
+  }
+  .category-cart {
+    height: 233px;
   }
 }/*# sourceMappingURL=main.css.map */
