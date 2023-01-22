@@ -40,22 +40,17 @@ img {
 }
 
 @include breackpoint-down(1024px) {
-  body {
-    background-image: url(../images/bg-body-img.png);
-    background-size: 1024px 660px;
+  .section-title {
+    margin-bottom: 36px;
+    font-size: 48px;
+    line-height: 63.98px;
   }
 }
 
-@include breackpoint-down(768px) {
-  body {
-    background-image: url(../images/bg-body-img.png);
-    background-size: 768px 660px;
-  }
-}
-
-@include breackpoint-down(350px) {
-  body {
-    background-image: url(../images/bg-body-img.png);
-    background-size: 320px 738px;
+@include breackpoint-down(460px) {
+  .section-title {
+    margin-bottom: 23px;
+    font-size: 28px;
+    line-height: 42px;
   }
 }
