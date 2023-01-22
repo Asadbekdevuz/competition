@@ -64,6 +64,7 @@ background: #555;
 .category-item {
     font-family: $font-roboto;
     color: $color-green;
+    cursor: pointer;
 }
 
 .category-all {
@@ -77,6 +78,7 @@ background: #555;
     border-radius: 10px;
     border: 0;
     color: #fff;
+    cursor: pointer;
 }
 
 .category-right {
